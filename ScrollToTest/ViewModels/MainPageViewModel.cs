@@ -12,13 +12,13 @@ namespace ScrollToTest.ViewModels
 {
     public class MainPageViewModel : BindableBase
     {
+        public ObservableCollection<State> States { get; set; }
+
         public MainPageViewModel()
         {
             States = new ObservableCollection<State>();
             States = _states;
         }
-
-        public ObservableCollection<State> States { get; set; }
 
         private readonly ObservableCollection<State> _states = new ObservableCollection<State>()
         {
